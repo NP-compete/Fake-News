@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Article Results</title>
+    <link rel="stylesheet" href="static/FakeNewsApp/fakeNewsStyle.css"/>
+</head>
+<body>
+
+<div class ="titleBar">Team 4 - Fake News Detector</div>
+<div class="content">
+    <div class="verdict">
+        Verdict:
+        <span id="trueVerdict" hidden>True</span>
+        <span id="falseVerdict" hidden>False</span>
+    </div>
+    <div id="finalScore">
+        Final Score:
+    </div>
+    <div id="progressionContainer"></div>
+</div>
+
+<script type="application/javascript">
+    "use strict";
+    var url = "{{ url | escapejs }}";
+    var content = "{{ content | escapejs }}";
+    var verdict = {% if verdict %} true {% else %} false {% endif %};
+    var score = {{ score }};
+    var word_scores = [
+        {% for word_score in word_scores %}
+        {{ word_score }},
+        {% endfor %}
+    ];
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="application/javascript" src="static/FakeNewsApp/judgearticle.js"></script>
+
+
+</body>
+</html>

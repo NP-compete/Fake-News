@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake News Detection</title>
+    <link rel="stylesheet" href="../../static/FakeNewsApp/fakeNewsStyle.css">
+
+</head>
+<body>
+
+<div class ="titleBar">Team 4 - Fake News Detector</div>
+<div class="content">
+    <div id="urlInputContainer">
+        <span>Enter a URL here to see article result:</span>
+
+        <form action="/judgearticle" method="get">
+            <input type="url" name="url">
+            <input type="submit">
+        </form>
+    </div>
+    <br>
+
+    <div id="textInputContainer">
+        <span>Enter text here to see its result:</span>
+
+        <form action="/judgetext" method="post">
+            <input type="text" name="text">
+            <input type="submit">
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
