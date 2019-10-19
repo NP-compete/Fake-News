@@ -1,5 +1,5 @@
 # FakeNewsAI
-An artificial intelligence that can detect fake news
+An artificial intelligence that can detect fake news that is being circulated on the social media.
 
 ### Goal
 The goal of this project is to create an AI that accepts a URL for a news article, and outputs
