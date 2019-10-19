@@ -12,3 +12,9 @@ The directory `WebScraper/` contains the code we used to gather our dataset of 9
 The directory `AITests/` contains the code we used to learn Tensorflow, and to train the neural network.
 
 The directory `FakeNewsWebsite/` is a Django project, which is the final product of this project.
+
+
+### TODO
+- [ ] Redesign to fit streaming data
+- [ ] Make an API
+- [ ] Host it somewhere
